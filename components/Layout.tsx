@@ -8,32 +8,31 @@ type Props = {
 };
 
 const Layout = ({ children, title = "This is the default title" }: Props) => (
-  <div className='max-w-2xl mx-auto mt-6 grid grid-cols-1 gap-6'>
+  <div className='max-w-5xl mx-auto mt-6 grid grid-cols-1 gap-6'>
     <Head>
       <title>{title}</title>
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
     </Head>
     <header>
-      <nav>
+      <nav dir='rtl'>
         <Link href='/'>
-          <a>Home</a>
+          <a>صفحه اصلی</a>
         </Link>{" "}
         |{" "}
         <Link href='/about'>
-          <a>About</a>
+          <a>آخرین آهنگ ها</a>
         </Link>{" "}
         |{" "}
         <Link href='/users'>
-          <a>Users List</a>
-        </Link>{" "}
-        | <a href='/api/users'>Users API</a>
+          <a>پخش آهنگ</a>
+        </Link>
       </nav>
     </header>
     {children}
     <footer>
       <hr />
-      <span>I'm here to stay (Footer)</span>
+      <span>Footer</span>
     </footer>
   </div>
 );
