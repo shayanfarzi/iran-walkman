@@ -9,7 +9,7 @@ type Props = {
 };
 
 const Layout = ({ children, title = "This is the default title" }: Props) => (
-  <div className='max-w-5xl mx-auto mt-6 grid grid-cols-1 gap-6'>
+  <div className='max-w-5xl mx-auto mt-6 grid grid-cols-1 gap-4'>
     <Head>
       <title>{title}</title>
       <meta charSet='utf-8' />
